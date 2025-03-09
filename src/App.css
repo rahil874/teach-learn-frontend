@@ -314,6 +314,58 @@ button:focus-visible {
   margin-right: 1rem;
 }
 
+.working .working1 .logo-image {
+  max-width: 100%; /* Ensure the container doesn't exceed its parent */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically (if needed) */
+  padding: 10px; /* Add some padding if needed */
+}
+
+.working .working1 .logo-image img {
+  max-width: 80%; /* Ensure the image doesn't exceed the container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.rules .rules2 .logo-image {
+  max-width: 100%; /* Ensure the container doesn't exceed its parent */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically (if needed) */
+  padding: 10px; /* Add some padding if needed */
+}
+
+.rules .rules2 .logo-image img {
+  max-width: 80%; /* Ensure the image doesn't exceed the container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.aboutus .aboutus1 .logo-image {
+  max-width: 100%; /* Ensure the container doesn't exceed its parent */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically (if needed) */
+  padding: 10px; /* Add some padding if needed */
+}
+
+.aboutus .aboutus1 .logo-image img {
+  max-width: 80%; /* Ensure the image doesn't exceed the container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.contactus .contactus2 .logo-image {
+  max-width: 100%; /* Ensure the container doesn't exceed its parent */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically (if needed) */
+  padding: 10px; /* Add some padding if needed */
+}
+
+.contactus .contactus2 .logo-image img {
+  max-width: 80%; /* Ensure the image doesn't exceed the container */
+  height: auto; /* Maintain aspect ratio */
+}
+
 .working,
 .rules,
 .aboutus,

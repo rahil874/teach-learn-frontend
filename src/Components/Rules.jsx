@@ -13,7 +13,7 @@ const Rules = () => {
   return (
     <div className="rules">
       <div className="rules2">
-        <div className="rules1">
+        <div className="logo-image">
           <Link to="/">
             <img src={logo} alt="Teach-Learn Logo" />
           </Link>
