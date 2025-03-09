@@ -1,0 +1,290 @@
+
+                                  1ST PART OF RESPONSIVE WEB DESIGN - ORIGINAL
+
+
+
+
+
+
+.navbar {
+  /* top:50px; */
+  /* padding: 0;
+  margin: 0; */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Vertically align items */
+  justify-content: space-between; /* Distribute space between items */
+ 
+  /* position: sticky;  */
+  /* or fixed, depending on your preference */
+  
+  width: 100%; /* Ensure full width */
+  z-index: 100; /* Ensure it's above other content */
+  padding: 100px 25px;
+  margin-top: -200px; /* or a smaller value */
+  /* margin-bottom:100px; */
+
+    padding-top: 50px; /* or a smaller value */
+    /* padding-bottom: 150px; */
+
+    /* background-color: #f0f0f0; */
+}
+
+
+
+.App h1 {
+
+    margin-top: 30px; /* Adjust the pixel value as needed */
+    margin-bottom:30px;
+}
+
+
+
+
+.navbar img {
+  width: 100px;
+  height: 30px; /* Adjust height as needed */
+  margin-right: 1rem; /* Space between logo and buttons */
+  /* background:grey; */
+}
+
+.navbar a {
+  text-decoration: none; /* Remove underlines from links */
+}
+
+.navbar button {
+  padding: 0.5rem 1rem; /* Adjust padding as needed */
+  margin: 0 0.5rem; /* Space between buttons */
+  border: none; /* Remove default button border */
+  background-color: #007bff; /* Example button background color */
+  color: white; /* Example button text color */
+  border-radius: 10px; /* Add rounded corners */
+  cursor: pointer; /* Make cursor a pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   /* 1ST PART - GOOGLE GEMINI MOBILE RESPONSIVE DESIGN*/
+                             /* (Original Part is in Notes.txt) */
+
+
+
+
+
+
+
+
+
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 100;
+  padding: 50px 25px; /* Adjusted padding */
+  margin-top: -100px; /* Adjusted negative margin */
+  background-color: rgba(255, 255, 255, 0.7); /* Optional: semi-transparent background for better contrast */
+}
+
+.App h1 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.navbar img {
+  width: 80px; /* Adjusted logo width */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 1rem;
+}
+
+.navbar button {
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 0.9rem; /* Slightly smaller font size */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                              2ND PART OF RESPONSIVE WEB DESIGN - ORIGINAL
+
+
+
+
+
+
+
+                        /* Responsive adjustments (example) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: flex-start; /* Align items to the left */
+    /* padding: 0.5rem; */
+  }
+
+  .navbar img {
+    margin-bottom: 0.5rem;
+  }
+
+  .navbar button {
+    margin: 0.25rem 0; /* Smaller margin between buttons */
+    width: 100%; /* Make buttons full width on small screens */
+  }
+}
+
+
+
+
+
+
+
+.working{
+  display:flex;
+}
+
+.working2 img{
+  width:50vw;
+  height:100vh;
+}
+
+.rules{
+  display:flex;
+}
+
+.rules1 img{
+  width:50vw;
+  height:100vh;
+}
+
+.aboutus{
+  display:flex;
+}
+
+.aboutus2 img{
+  width:50vw;
+  height:100vh;
+}
+
+.contactus{
+  display:flex;
+}
+
+.contactus1 img{
+  width:50vw;
+  height:100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 2ND PART - GOOGLE GEMINI MOBILE RESPONSIVE DESIGN*/
+                                /* (Original Part is in Notes.txt) */
+
+
+
+
+
+
+
+
+
+
+/* Mobile-first approach */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack vertically */
+    align-items: center; /* Center horizontally */
+    padding: 20px 15px; /* Smaller padding */
+    margin-top: 0; /* Remove negative margin on mobile */
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly less transparent */
+  }
+
+  .navbar img {
+    width: 60px; /* Smaller logo */
+    margin-bottom: 10px; /* Space below logo */
+  }
+
+  .navbar button {
+    margin: 5px 0; /* Space between buttons */
+    width: 100%; /* Full-width buttons */
+    font-size: 1rem; /* Adjust font size */
+  }
+
+  .App.home-background,
+  .learn-background,
+  .teach-background {
+      align-items: flex-start; /* Align content to the top on mobile */
+      justify-content: flex-start; /* Align content to the left on mobile */
+      padding-top: 60px; /* Add top padding to avoid content being hidden under navbar */
+  }
+
+  .App h1 {
+    font-size: 2em; /* Smaller heading */
+    margin: 10px 0; /* Adjust margins */
+  }
+
+  .App p { /* Example: target paragraphs */
+    font-size: 0.9rem; /* Smaller font size for other text */
+    margin: 10px 0;
+  }
+
+  /* Adjust other elements as needed for mobile */
+  .working2 img,
+  .rules1 img,
+  .aboutus2 img,
+  .contactus1 img {
+      width: 100vw; /* Make images full width on mobile */
+      height: auto; /* Maintain aspect ratio */
+  }
+}
+
+
+

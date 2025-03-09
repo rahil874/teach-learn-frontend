@@ -1,0 +1,281 @@
+/* App.css  */
+#root {
+  margin: 0; 
+  padding: 0;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; 
+
+   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+    color-scheme: light dark;
+
+font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+   
+body{
+  margin:0;
+}
+
+.App h1 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+
+button {
+  border-radius: 8px;
+  border: 1px solid black;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin-left:10px;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* Apply background image ONLY to the App route */
+.App.home-background { /* Add the class name to the App component when it's the home route */
+  flex-grow:1;
+  display: flex;
+  /* padding-top:0px; */
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+
+  background-image: url("./Images/bg-image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+   min-width: 100vw;
+}
+
+.homepage-content{
+  /* align-items: center;
+  justify-content:center; */
+  padding:20px;
+}
+
+.App h1{
+  margin-top:0;
+}
+
+
+/* Styles for other pages (e.g., Learn, Teach) */
+.learn-background { /* Class for Learn component */
+  /* background-image: url("./Images/Learning1.avif");  */
+  /* Path to Learn's background */
+   background: 
+     linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+    url('./Images/Learning1.avif');
+  flex-grow:1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+   min-width: 100vw;
+}
+
+.learn-content{
+  padding:20px;
+}
+
+.teach-background { /* Class for Teach component */
+  /* background-image: url("./Images/Teaching1.jpeg");  */
+  background: 
+     linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+    url('./Images/Teaching1.jpeg'); 
+  /* opacity:0.1; */
+  /* background: rgba(255, 255, 255, 0.9); */
+  /* background-color: hsla(0, 100%, 100%, 0.1); */
+  flex-grow:1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+   min-width: 100vw;
+}
+
+.teach-content{
+  padding:20px;
+}
+     
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+
+
+.navbar {
+  /* position:sticky; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* position: absolute; Place the navbar above the background image */
+  /* top: 0; Align it to the top */
+  /* left: 0; Align it to the left */
+
+  width: 100%;
+  z-index: 100;
+  padding: 10px 15px; 
+  /* margin-top: -100px;  */
+ background-color: transparent !important;
+  /* Optional: semi-transparent background for better contrast */
+
+}
+
+.navbar .navbar-toggler,
+.navbar .navbar-collapse {
+    background-color: transparent !important;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link,
+.navbar .form-control,
+.navbar .btn {
+  color: black !important; /* Ensure text is visible on the background */
+  border-color: white !important; /* Ensure borders are visible */
+}
+
+.navbar .btn-outline-success{
+    color: white !important;
+    border-color: white !important;
+}
+
+.navbar .form-control{
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly transparent white for input */
+}
+
+
+.navbar img {
+  width: 80px; /* Adjusted logo width */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 1rem;
+}
+
+.working,
+.rules,
+.aboutus,
+.contactus {
+  display: flex; /* Default to flex row for larger screens */
+}
+
+.working2 img,
+.rules1 img,
+.aboutus2 img,
+.contactus1 img {
+  width: 50vw; /* Default width for larger screens */
+  height: 100vh; /* Default height for larger screens */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .working,
+  .rules,
+  .aboutus,
+  .contactus {
+    flex-direction: column; /* Stack elements vertically on mobile */
+  }
+
+  .working2 img,
+  .rules1 img,
+  .aboutus2 img,
+  .contactus1 img {
+    width: 100%; /* Full width on mobile */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
