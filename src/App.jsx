@@ -34,7 +34,7 @@ function App() {
           path="/"
           element={
             <div className="homepage-content">
-              <div>
+              <div className="logo-image">
                       <Link to="/">
                         <img src={logo} alt="Teach-Learn Logo" />
                       </Link>

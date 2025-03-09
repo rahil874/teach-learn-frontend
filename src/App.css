@@ -19,10 +19,18 @@ font-synthesis: none;
   -moz-osx-font-smoothing: grayscale;
   
 }
+
+* {
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
    
 body{
   margin:0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+
 }
+
+
 
 .App h1 {
   margin-top: 30px;
@@ -86,10 +94,33 @@ button:focus-visible {
    min-width: 100vw;
 }
 
-.homepage-content{
-  /* align-items: center;
-  justify-content:center; */
-  padding:20px;
+.homepage-content {
+  padding: 20px; /* Reduced padding for mobile */
+  max-width: 90%; /* Ensure content stays within image bounds */
+  margin: 0 auto; /* Center the content */
+}
+
+.homepage-content img {
+  max-width: 100%; /* Ensure logo stays within container */
+  height: auto;
+}
+
+.homepage-content h1,
+.homepage-content h2 {
+  width: 100%; /* Ensure headings take full container width */
+  text-align: center; /* Center headings */
+  padding: 0 10px; /* Add some padding to headings */
+}
+
+/* Adjust font sizes for mobile */
+@media (max-width: 768px) {
+  .homepage-content h1 {
+    font-size: 2em; /* Smaller font size for mobile */
+  }
+
+  .homepage-content h2 {
+    font-size: 1.2em; /* Smaller font size for mobile */
+  }
 }
 
 .App h1{
@@ -117,8 +148,33 @@ button:focus-visible {
    min-width: 100vw;
 }
 
-.learn-content{
-  padding:20px;
+.learn-content {
+  padding: 20px; /* Reduced padding for mobile */
+  max-width: 90%; /* Ensure content stays within image bounds */
+  margin: 0 auto; /* Center the content */
+}
+
+.learn-content img {
+  max-width: 100%; /* Ensure logo stays within container */
+  height: auto;
+}
+
+.learn-content h1,
+.learn-content h2 {
+  width: 100%; /* Ensure headings take full container width */
+  text-align: center; /* Center headings */
+  padding: 0 10px; /* Add some padding to headings */
+}
+
+/* Adjust font sizes for mobile */
+@media (max-width: 768px) {
+  .learn-content h1 {
+    font-size: 2em; /* Smaller font size for mobile */
+  }
+
+  .learn-content h2 {
+    font-size: 1.2em; /* Smaller font size for mobile */
+  }
 }
 
 .teach-background { /* Class for Teach component */
@@ -142,8 +198,33 @@ button:focus-visible {
    min-width: 100vw;
 }
 
-.teach-content{
-  padding:20px;
+.teach-content {
+  padding: 20px; /* Reduced padding for mobile */
+  max-width: 90%; /* Ensure content stays within image bounds */
+  margin: 0 auto; /* Center the content */
+}
+
+.teach-content img {
+  max-width: 100%; /* Ensure logo stays within container */
+  height: auto;
+}
+
+.teach-content h1,
+.teach-content h2 {
+  width: 100%; /* Ensure headings take full container width */
+  text-align: center; /* Center headings */
+  padding: 0 10px; /* Add some padding to headings */
+}
+
+/* Adjust font sizes for mobile */
+@media (max-width: 768px) {
+  .teach-content h1 {
+    font-size: 2em; /* Smaller font size for mobile */
+  }
+
+  .teach-content h2 {
+    font-size: 1.2em; /* Smaller font size for mobile */
+  }
 }
      
 .logo {

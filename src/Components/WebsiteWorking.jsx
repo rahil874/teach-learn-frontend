@@ -14,7 +14,7 @@ const WebsiteWorking = () => {
     return (
       <div className="working">
         <div className="working1">
-          <div>
+          <div className="working2">
             <Link to="/">
               <img src={logo} alt="Teach-Learn Logo" />
             </Link>

@@ -13,7 +13,7 @@ const ContactUs = () => {
   return (
     <div className="contactus">
       <div className="contactus2">
-        <div>
+        <div className="contactus1">
           <Link to="/">
             <img src={logo} alt="Teach-Learn Logo" />
           </Link>

@@ -13,7 +13,7 @@ const AboutUs = () => {
   return (
     <div className="aboutus">
       <div className="aboutus1">
-        <div>
+        <div className="aboutus2">
           <Link to="/">
             <img src={logo} alt="Teach-Learn Logo" />
           </Link>
