@@ -19,7 +19,9 @@ const Learn = () => {
   useEffect(() => {
     const fetchTopic = async () => {
       try {
-        const response = await fetch('http://localhost:5555/api/get-topic');
+        const response = await fetch(
+          "https://teach-learn-1.onrender.com/api/get-topic"
+        );
         if (!response.ok) {
           throw new Error('Failed to fetch topic');
         }

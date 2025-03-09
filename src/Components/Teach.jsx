@@ -16,13 +16,16 @@ const Teach = () => {
     
     if (topic && timings) {
       try {
-        const response = await fetch('http://localhost:5555/api/save-topic', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({ topic, timings }),
-        });
+        const response = await fetch(
+          "https://teach-learn-1.onrender.com/api/save-topic",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ topic, timings }),
+          }
+        );
         
         if (response.ok) {
           // alert(`Topic and timings saved successfully!\n\n`);
